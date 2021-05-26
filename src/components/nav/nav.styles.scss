@@ -1,0 +1,50 @@
+@import "../../assets/scss/variabiles";
+
+.nav {
+  display: flex;
+  justify-content: center;
+  background-color: $colorWhite;
+  padding: 0.9375rem 0;
+  align-items: center;
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+
+  &__content {
+    width: 71.25rem;
+    height: 3.125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    font-size: $font-med;
+    color: $colorBlack3;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: $colorBlack5;
+    padding: 0.5rem 0.125rem;
+    font-weight: 400;
+    color: $colorBlack3;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s ease-in-out;
+  }
+
+  &__link:hover {
+    border-bottom: 2px solid $colorBlue;
+    transition: border 0.2s ease-in-out;
+  }
+
+  &__link:not(:last-of-type) {
+    margin-right: 2.7rem;
+  }
+}

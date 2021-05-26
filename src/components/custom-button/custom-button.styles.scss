@@ -1,0 +1,21 @@
+@import "../../assets/scss/variabiles";
+
+.button {
+  width: fit-content;
+  font-size: 0.9375rem;
+  background-color: $colorButtonBlue;
+  background-image: $gradientBlueR;
+  padding: 0.875rem 2.125rem;
+  margin: 0 auto;
+  border-radius: 1.5625rem;
+  letter-spacing: 0.0625rem;
+  font-weight: $font-medium;
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-image: $gradientBlueL;
+    opacity: 0.8;
+    transition: all 0.5s ease-in-out;
+  }
+}

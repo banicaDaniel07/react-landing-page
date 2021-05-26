@@ -1,0 +1,26 @@
+$colorRed: red;
+$colorBlue: blue;
+$colorWhite: white;
+$colorBlack3: #333;
+$colorBlack5: #555;
+$colorButtonBlue: #5ca9fb;
+
+$black01: rgba(0, 0, 0, 0.1);
+$black02: rgba(0, 0, 0, 0.2);
+$gradientBlueR: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+$gradientBlueL: linear-gradient(to left, #6372ff 0%, #5ca9fb 100%);
+
+$font-med: 1.5rem;
+
+$font-bold: 700;
+$font-medium: 500;
+$font-light: 300;
+
+$familly-sans: "Open Sans", sans-serif;
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Raleway", sans-serif;
+}
