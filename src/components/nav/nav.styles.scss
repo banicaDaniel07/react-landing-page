@@ -1,12 +1,16 @@
 @import "../../assets/scss/variabiles";
 
 .nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   background-color: $colorWhite;
   padding: 0.9375rem 0;
   align-items: center;
   box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+  z-index: 1000;
 
   &__content {
     width: 71.25rem;

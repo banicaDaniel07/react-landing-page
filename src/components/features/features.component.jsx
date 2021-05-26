@@ -7,7 +7,7 @@ import './features.styles.scss';
 const FeaturesSection = () => {
     return (
         <div className='features'>
-            <Title className='feature__title'>FEATURES</Title>
+            <Title className='feature__title' classExtra={'text-center margin-bottom'}>FEATURES</Title>
             <div className='feature__container'>
                 <FeatureItem 
                 icon={'fas fa-comments'} 

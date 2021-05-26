@@ -1,4 +1,5 @@
 import './App.scss';
+import About from './components/about/about.component';
 import FeaturesSection from './components/features/features.component';
 import HeroSection from './components/hero/hero.component';
 import Navigation from './components/nav/nav.component';
@@ -9,6 +10,7 @@ function App() {
       <Navigation/>
       <HeroSection/>
       <FeaturesSection/>
+      <About/>
     </div>
   );
 }

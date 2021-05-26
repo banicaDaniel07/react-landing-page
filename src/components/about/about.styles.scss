@@ -1,0 +1,28 @@
+@import "../../assets/scss/variabiles";
+
+.about {
+  width: 100%;
+  padding: 6.25rem 0;
+
+  &__container {
+    width: 73.125rem;
+    height: 24.25rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+  }
+
+  &__image {
+    width: 32.5rem;
+    margin-top: 0.625rem;
+    background-image: url("../../assets/img/about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
+  &__aboutUs {
+    margin: 30px 0;
+    text-align: start;
+  }
+}

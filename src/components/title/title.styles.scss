@@ -2,11 +2,12 @@
 
 .title {
   position: relative;
-  font-size: 2rem;
+  font-size: 2.25rem;
   color: $colorBlack3;
   font-weight: $font-very-bold;
   margin: 0.625rem 0 0.9375rem;
   padding-bottom: 0.9375rem;
+  text-align: center;
 
   &::after {
     position: absolute;
@@ -18,4 +19,20 @@
     margin-left: -1.875rem;
     left: 50%;
   }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+
+  &::after {
+    left: 5.2%;
+  }
+}
+
+.margin-bottom {
+  margin-bottom: 5.9375rem;
 }

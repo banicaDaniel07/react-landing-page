@@ -7,15 +7,13 @@
   background-color: $colorGrey;
 }
 
-.title {
-  margin-bottom: 5.9375rem;
-}
-
 .feature {
   &__container {
     width: 73.125rem;
     margin: 0 auto;
     display: grid;
+    justify-items: center;
+    grid-gap: 0.625rem;
     grid-template-columns: repeat(4, 1fr);
   }
 }
