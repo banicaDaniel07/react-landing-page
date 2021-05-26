@@ -1,8 +1,10 @@
 $colorRed: red;
 $colorBlue: blue;
+$colorLightBlue: #5ca9fb;
 $colorWhite: white;
 $colorBlack3: #333;
 $colorBlack5: #555;
+$colorBlack7: #777;
 $colorGrey: #f6f6f6;
 $colorButtonBlue: #5ca9fb;
 
@@ -17,6 +19,7 @@ $font-very-bold: 800;
 $font-bold: 700;
 $font-bold-slim: 600;
 $font-medium: 500;
+$font-light-medium: 400;
 $font-light: 300;
 
 $familly-sans: "Open Sans", sans-serif;
@@ -26,4 +29,8 @@ $familly-sans: "Open Sans", sans-serif;
   padding: 0;
   margin: 0;
   font-family: "Raleway", sans-serif;
+}
+
+.container {
+  padding: 6.25rem 0;
 }
