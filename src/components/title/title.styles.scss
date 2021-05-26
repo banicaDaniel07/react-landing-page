@@ -1,0 +1,21 @@
+@import "../../assets/scss/variabiles";
+
+.title {
+  position: relative;
+  font-size: 2rem;
+  color: $colorBlack3;
+  font-weight: $font-very-bold;
+  margin: 0.625rem 0 0.9375rem;
+  padding-bottom: 0.9375rem;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background: $gradientBlueR;
+    height: 0.25rem;
+    width: 3.75rem;
+    bottom: 0;
+    margin-left: -1.875rem;
+    left: 50%;
+  }
+}

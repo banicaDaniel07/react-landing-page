@@ -1,0 +1,21 @@
+@import "../../assets/scss/variabiles";
+
+.features {
+  width: 100vw;
+  height: 100%;
+  padding: 6.25rem 0;
+  background-color: $colorGrey;
+}
+
+.title {
+  margin-bottom: 5.9375rem;
+}
+
+.feature {
+  &__container {
+    width: 73.125rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

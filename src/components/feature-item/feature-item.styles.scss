@@ -1,0 +1,34 @@
+@import "../../assets/scss/variabiles";
+
+.feature {
+  width: 16.4375rem;
+  height: 15.3125rem;
+
+  &__image {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 0 auto;
+    background-color: $colorBlue;
+    background: $gradientBlueR;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    i {
+      color: $colorWhite;
+      font-size: 2rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: $font-bold-slim;
+    margin: 2.5rem 0 0.625rem;
+  }
+
+  &__info {
+    font-size: 0.9375rem;
+    font-weight: $font-light;
+  }
+}
