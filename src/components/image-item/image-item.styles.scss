@@ -1,0 +1,65 @@
+@import "../../assets/scss/variabiles";
+
+.image-item {
+  position: relative;
+  width: 23.75rem;
+  height: 16.25rem;
+  cursor: pointer;
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $colorLightBlue08;
+    background-image: $gradientBlueR08;
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &__info {
+    font-size: 1.125rem;
+    color: $colorWhite;
+    font-weight: $font-bold-slim;
+    letter-spacing: 0.1rem;
+  }
+}
+
+.image-item__overlay:hover {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+}
+
+.bg-1 {
+  background-image: url("../../assets/img/portfolio/01-small.jpg");
+}
+.bg-2 {
+  background-image: url("../../assets/img/portfolio/02-small.jpg");
+}
+.bg-3 {
+  background-image: url("../../assets/img/portfolio/03-small.jpg");
+}
+.bg-4 {
+  background-image: url("../../assets/img/portfolio/04-small.jpg");
+}
+.bg-5 {
+  background-image: url("../../assets/img/portfolio/05-small.jpg");
+}
+.bg-6 {
+  background-image: url("../../assets/img/portfolio/06-small.jpg");
+}
+.bg-7 {
+  background-image: url("../../assets/img/portfolio/07-small.jpg");
+}
+.bg-8 {
+  background-image: url("../../assets/img/portfolio/08-small.jpg");
+}
+.bg-9 {
+  background-image: url("../../assets/img/portfolio/09-small.jpg");
+}
