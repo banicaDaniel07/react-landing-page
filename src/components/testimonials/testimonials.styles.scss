@@ -1,0 +1,15 @@
+@import "../../assets/scss/variabiles";
+
+.testimonials {
+  width: 100%;
+  padding: 6.25rem;
+  background-color: $colorGrey;
+
+  &__container {
+    width: 73.125rem;
+    margin: 4.375rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+}

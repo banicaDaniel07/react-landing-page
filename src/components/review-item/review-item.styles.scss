@@ -1,0 +1,68 @@
+@import "../../assets/scss/variabiles";
+
+.review {
+  box-sizing: border-box;
+  width: 22.5rem;
+  height: 10.6875rem;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+
+  &__image {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+  }
+
+  &__text {
+    font-size: 0.875rem;
+    width: 15.0625rem;
+    text-align: start;
+    margin-bottom: 0.625rem;
+    color: $colorBlack7;
+    font-style: italic;
+    line-height: 1.2rem;
+  }
+  &__name {
+    text-align: start;
+    font-size: 0.9375rem;
+    color: $colorBlack7;
+  }
+}
+
+.bg-01 {
+  background-image: url("../../assets/img/testimonials/01.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-02 {
+  background-image: url("../../assets/img/testimonials/02.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-03 {
+  background-image: url("../../assets/img/testimonials/03.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-04 {
+  background-image: url("../../assets/img/testimonials/04.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-05 {
+  background-image: url("../../assets/img/testimonials/05.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bg-06 {
+  background-image: url("../../assets/img/testimonials/06.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
