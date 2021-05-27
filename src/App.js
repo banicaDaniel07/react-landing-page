@@ -4,6 +4,7 @@ import FeaturesSection from './components/features/features.component';
 import Gallery from './components/gallery/gallery.component';
 import HeroSection from './components/hero/hero.component';
 import Navigation from './components/nav/nav.component';
+import OurTeam from './components/our-team/our-team.component';
 import Services from './components/services/services.component';
 import Testimonials from './components/testimonials/testimonials.component';
 
@@ -17,6 +18,7 @@ function App() {
       <Services/>
       <Gallery/>
       <Testimonials/>
+      <OurTeam/>
     </div>
   );
 }
