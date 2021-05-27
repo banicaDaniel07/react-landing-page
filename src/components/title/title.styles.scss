@@ -21,6 +21,16 @@
   }
 }
 
+.title-white {
+  color: $colorWhite !important;
+}
+
+.no-background {
+  &::after {
+    background: $colorLightBlue;
+  }
+}
+
 .text-center {
   text-align: center;
 }

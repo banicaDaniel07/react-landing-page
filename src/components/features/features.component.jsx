@@ -11,24 +11,29 @@ const FeaturesSection = () => {
             <div className='feature__container'>
                 <FeatureItem 
                 icon={'fas fa-comments'} 
-                title={'Lorem ipsum'}>
+                title={'Lorem ipsum'}
+                classType={'small'}>
                     Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
                 </FeatureItem>
                 <FeatureItem 
                 icon={'fas fa-comments'} 
-                title={'Lorem ipsum'}>
+                title={'Lorem ipsum'}
+                classType={'small'}>
                     Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
                 </FeatureItem>
                 <FeatureItem 
                 icon={'fas fa-comments'} 
-                title={'Lorem ipsum'}>
+                title={'Lorem ipsum'}
+                classType={'small'}>
                     Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
                 </FeatureItem>
                 <FeatureItem 
                 icon={'fas fa-comments'} 
-                title={'Lorem ipsum'}>
+                title={'Lorem ipsum'}
+                classType={'small'}>
                     Lorem ipsum dolor sit amet placerat facilisis felis mi in tempus eleifend pellentesque natoque etiam.
                 </FeatureItem>
+                
             </div>
             
         </div>
