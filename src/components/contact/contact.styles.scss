@@ -1,0 +1,178 @@
+@import "../../assets/scss/variabiles";
+
+.contact {
+  padding: 6.25rem 0;
+  width: 100vw;
+  background-color: $colorLightBlue;
+  background-image: $gradientBlueR;
+
+  &__title {
+    width: 73.125rem;
+    margin: 0 auto;
+  }
+
+  &__container {
+    width: 73.125rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 6.25rem;
+    padding-bottom: 5.3125rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  &__left {
+    &__info {
+      font-family: $familly-sans;
+      color: $colorWhite;
+      margin-bottom: 3.125rem;
+      text-align: start;
+    }
+
+    &__inputs {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+      input {
+        box-sizing: border-box;
+        width: 22.8125rem;
+        height: 2.125rem;
+        padding: 0.375rem 0.75rem;
+        outline: none;
+        border: 1px solid #ddd;
+        line-height: 1.2rem;
+        font-weight: $font-medium;
+        font-size: 1.125rem;
+
+        &::placeholder {
+          color: $colorBlack3;
+          font-family: $familly-sans;
+        }
+      }
+    }
+    textarea {
+      box-sizing: border-box;
+      width: 48.75rem;
+      height: 6.375rem;
+      padding: 0.375rem 0.75rem;
+      outline: none;
+      border: 1px solid #ddd;
+      line-height: 1.2rem;
+      font-weight: $font-medium;
+      font-size: 1.125rem;
+
+      &::placeholder {
+        color: $colorBlack3;
+        font-family: $familly-sans;
+      }
+    }
+
+    &__submit {
+      margin: 1.875rem 0;
+      width: fit-content;
+      padding: 0.875rem 2.125rem;
+      border: 2px solid $colorWhite;
+      border-radius: 25px;
+      color: $colorWhite;
+      cursor: pointer;
+      font-weight: $font-medium;
+      letter-spacing: 0.1rem;
+
+      &:hover {
+        background-color: $colorWhite;
+        color: $colorBlack5;
+      }
+    }
+  }
+
+  &__right {
+    text-align: start;
+    color: $colorWhite;
+
+    &__info {
+      margin-bottom: 3.75rem;
+      font-size: 1.25rem;
+      font-weight: $font-light-medium;
+    }
+
+    &__address {
+      font-size: 0.9375rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+      font-family: $familly-sans;
+      font-weight: $font-light;
+
+      i {
+        margin-bottom: 0.625rem;
+      }
+
+      span {
+        font-family: $familly-sans;
+        margin-left: 0.25rem;
+      }
+    }
+    &__phone {
+      font-size: 0.9375rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+      font-family: $familly-sans;
+      font-weight: $font-light;
+
+      i {
+        margin-bottom: 0.625rem;
+      }
+
+      span {
+        font-family: $familly-sans;
+        margin-left: 0.25rem;
+      }
+    }
+    &__email {
+      font-size: 0.9375rem;
+      letter-spacing: 0.1rem;
+      margin-bottom: 1rem;
+      font-family: $familly-sans;
+      font-weight: $font-light;
+
+      i {
+        margin-bottom: 0.625rem;
+      }
+
+      span {
+        font-family: $familly-sans;
+        margin-left: 0.25rem;
+      }
+    }
+  }
+
+  .social {
+    margin-top: 3.125rem;
+    color: $colorWhite;
+
+    &__container {
+      width: 13.75rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    i {
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.375rem;
+      border: 2px solid $colorWhite;
+      padding: 0.75rem;
+      border-radius: 50%;
+      align-items: center;
+      justify-items: center;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $colorWhite;
+        color: $colorLightBlue;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+}

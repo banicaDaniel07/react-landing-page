@@ -1,6 +1,8 @@
 import './App.scss';
 import About from './components/about/about.component';
+import Contact from './components/contact/contact.component';
 import FeaturesSection from './components/features/features.component';
+import Footer from './components/footer/footer.component';
 import Gallery from './components/gallery/gallery.component';
 import HeroSection from './components/hero/hero.component';
 import Navigation from './components/nav/nav.component';
@@ -19,6 +21,8 @@ function App() {
       <Gallery/>
       <Testimonials/>
       <OurTeam/>
+      <Contact/>
+      <Footer/>
     </div>
   );
 }

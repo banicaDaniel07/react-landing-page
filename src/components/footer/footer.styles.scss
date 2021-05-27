@@ -1,0 +1,18 @@
+@import "../../assets/scss/variabiles";
+
+.footer {
+  width: 100vw;
+  height: 5.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $colorGrey;
+  font-size: 0.875rem;
+  color: $colorBlack7;
+
+  span {
+    color: $colorButtonBlue;
+    margin-left: 2px;
+    cursor: pointer;
+  }
+}
