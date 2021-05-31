@@ -21,12 +21,19 @@ $gradientBlueL: linear-gradient(to left, #6372ff 0%, #5ca9fb 100%);
 
 $font-med: 1.5rem;
 
-$font-very-bold: 800;
-$font-bold: 700;
-$font-bold-slim: 600;
-$font-medium: 500;
-$font-light-medium: 400;
-$font-light: 300;
+$weight800: 800;
+$weight700: 700;
+$weight600: 600;
+$weight500: 500;
+$weight400: 400;
+$weight300: 300;
+
+// $font-very-bold: 800;
+// $font-bold: 700;
+// $font-bold-slim: 600;
+// $font-medium: 500;
+// $font-light-medium: 400;
+// $font-light: 300;
 
 $familly-sans: "Open Sans", sans-serif;
 
@@ -40,3 +47,39 @@ $familly-sans: "Open Sans", sans-serif;
 // .container {
 //   padding: 6.25rem 0;
 // }
+
+@keyframes show-list {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  1% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes hide-list {
+  0% {
+    visibility: visible;
+    opacity: 1;
+    transform: translateX(0);
+  }
+  99% {
+    visibility: visible;
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+  100% {
+    visibility: hidden;
+    opacity: 0;
+    transform: translateX(-200%);
+  }
+}

@@ -1,7 +1,8 @@
 @import "../../assets/scss/variabiles", "../../assets/scss/mixins";
 
 .hero {
-  height: calc(100vh - 5rem);
+  box-sizing: border-box;
+  height: 100vh;
   width: 100vw;
   background: linear-gradient(to bottom, $black02 0%, $black01 100%),
     url("../../assets/img/intro-bg.jpg");
@@ -12,7 +13,9 @@
   justify-content: center;
   align-items: center;
   color: $colorWhite;
-  margin-top: 5rem;
+  // margin-top: 5rem;
+  padding-top: 5rem;
+  overflow: hidden;
 
   &__container {
     max-width: 48.75rem;
@@ -20,7 +23,7 @@
 
   &__title {
     font-size: 5.125rem;
-    font-weight: $font-bold;
+    font-weight: $weight700;
     color: $colorWhite;
     line-height: 5.2rem;
     letter-spacing: 0.2rem;
@@ -30,7 +33,7 @@
   &__subtitle {
     font-size: 1.375rem;
     font-family: $familly-sans;
-    font-weight: $font-light;
+    font-weight: $weight300;
     line-height: 1.875rem;
     margin-bottom: 3.75rem;
   }
@@ -43,7 +46,7 @@
     }
     &__title {
       font-size: 4rem;
-      font-weight: $font-bold-slim;
+      font-weight: $weight600;
       line-height: 4.125rem;
     }
 
@@ -70,7 +73,7 @@
     &__subtitle {
       font-size: 1rem;
       line-height: 1.2rem;
-    } 
+    }
   }
 }
 @include breakpoint-down("410px") {

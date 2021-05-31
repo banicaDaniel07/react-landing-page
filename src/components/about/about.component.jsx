@@ -6,7 +6,7 @@ import './about.styles.scss';
 
 const About = () => {
     return (
-        <div className='about'>
+        <div className='about' id='about-us'>
             <div className="about__container">
                 <div className="about__image"></div>
                 <div className="about__info">

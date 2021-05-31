@@ -6,7 +6,7 @@ import './gallery.styles.scss';
 
 const Gallery = () => {
     return (
-        <div className='gallery'>
+        <div className='gallery' id='gallery'>
             <Title>GALLERY</Title>
             <p className="gallery__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
             <div className='gallery__container'>

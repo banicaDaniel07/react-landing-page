@@ -24,13 +24,13 @@
 
   &__title {
     font-size: 1.25rem;
-    font-weight: $font-bold-slim;
+    font-weight: $weight600;
     margin: 2.5rem 0 0.625rem;
   }
 
   &__info {
     font-size: 0.9375rem;
-    font-weight: $font-light;
+    font-weight: $weight300;
   }
 }
 
@@ -58,7 +58,7 @@
 
   &__title {
     font-size: 1.25rem;
-    font-weight: $font-bold-slim;
+    font-weight: $weight600;
     margin: 1.25rem 0 0.625rem;
     padding-bottom: 0.3125rem;
   }
@@ -67,7 +67,7 @@
     width: 21.25rem;
     font-size: 0.9375rem;
     margin: 0 auto;
-    font-weight: $font-light-medium;
+    font-weight: $weight400;
     opacity: 0.75;
     line-height: 1.25rem;
   }
@@ -98,7 +98,7 @@
 
     &__title {
       font-size: 1.25rem;
-      font-weight: $font-bold-slim;
+      font-weight: $weight600;
       margin: 1.25rem 0 0.625rem;
       padding-bottom: 0.3125rem;
     }
@@ -107,7 +107,7 @@
       width: 90%;
       font-size: 0.9375rem;
       margin: 0 auto;
-      font-weight: $font-light-medium;
+      font-weight: $weight400;
       opacity: 0.75;
       line-height: 1.25rem;
     }

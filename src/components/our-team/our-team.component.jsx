@@ -6,7 +6,7 @@ import './our-team.styles.scss';
 
 const OurTeam = () => {
     return (
-        <div className='team'>
+        <div className='team' id='team'>
             <Title>MEET THE TEAM</Title>
             <p className="team__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>
             <div className="team__container">

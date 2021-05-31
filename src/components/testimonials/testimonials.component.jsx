@@ -6,7 +6,7 @@ import './testimonials.styles.scss';
 
 const Testimonials = () => {
     return (
-        <div className='testimonials'>
+        <div className='testimonials' id='testimonails'>
             <Title>WHAT OUR CLIENTS SAY</Title>
             <div className="testimonials__container">
                 <ReviewItem photo='bg-01' name='John Doe'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.</ReviewItem>

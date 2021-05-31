@@ -5,6 +5,7 @@
   position: fixed;
   top: 0;
   width: 100%;
+  height: 80px;
   display: flex;
   justify-content: center;
   background-color: $colorWhite;
@@ -26,6 +27,7 @@
     color: $colorBlack3;
     font-weight: 700;
     letter-spacing: 0.05rem;
+    cursor: pointer;
   }
 
   &__list {
@@ -34,6 +36,7 @@
   }
 
   &__link {
+    position: relative;
     text-decoration: none;
     color: $colorBlack5;
     padding: 0.5rem 0.125rem;
@@ -44,9 +47,21 @@
     transition: border 0.2s ease-in-out;
   }
 
+  &__link::after {
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #6372ff 0%, #5ca9fb 100%);
+    content: "";
+    transition: width 0.2s;
+  }
   &__link:hover {
-    border-bottom: 2px solid $colorBlue;
-    transition: border 0.2s ease-in-out;
+    &::after {
+      width: 100%;
+    }
   }
 
   &__link:not(:last-of-type) {
@@ -57,11 +72,15 @@
     display: none;
   }
 }
+.active {
+  color: rgb(28, 169, 212);
+  font-weight: $weight600;
+}
 
 @include breakpoint-down(pc) {
   .nav {
     width: 100vw;
-    background-color: red;
+    // background-color: red;
 
     &__content {
       width: 100vw;
@@ -79,9 +98,36 @@
 
 @include breakpoint-down(tablet) {
   .nav {
-    background-color: royalblue;
+    // background-color: royalblue;
+    z-index: 1000;
     &__list {
-      display: none;
+      position: absolute;
+      // background-color: $colorLightBlue;
+      // background: $gradientBlueR;
+      background-color: $colorWhite;
+      width: 100%;
+      margin: 0 auto;
+      height: 400px;
+      top: 80px;
+      left: 0;
+      right: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      z-index: -10;
+      transition: all 0.5s ease-in-out;
+      box-shadow: 0 0 50px rgba(87, 85, 85, 0.5);
+      transform: translateX(-200%);
+    }
+    &__link {
+      width: fit-content;
+      font-weight: $weight600;
+      margin: 0px !important;
+    }
+    &__link:hover {
+      &::after {
+        display: none;
+      }
     }
     &__container {
       display: block;
@@ -95,11 +141,24 @@
       font-size: 1.875rem;
     }
   }
+  .active {
+    color: rgb(214, 16, 16);
+  }
+
+  .show-list {
+    animation: show-list 0.5s forwards;
+    transition: all 0.5s ease-in-out;
+  }
+
+  .hide-list {
+    animation: hide-list 0.5s forwards;
+    transition: all 0.5s ease-in-out;
+  }
 }
 
 @include breakpoint-down(phone) {
   .nav {
-    background-color: salmon;
+    // background-color: salmon;
     &__logo {
       font-weight: 0.875rem;
     }

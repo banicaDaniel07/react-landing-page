@@ -5,7 +5,7 @@ import './contact.styles.scss';
 
 const Contact = () => {
     return (
-        <div className='contact'>
+        <div className='contact' id='contact'>
             <div className="contact__title">
             <Title classExtra='text-start title-white'>GET IN TOUCH</Title>
             </div>
