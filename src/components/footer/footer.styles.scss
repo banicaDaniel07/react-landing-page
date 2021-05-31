@@ -1,4 +1,5 @@
 @import "../../assets/scss/variabiles";
+@import "../../assets/scss/mixins";
 
 .footer {
   width: 100vw;
@@ -14,5 +15,16 @@
     color: $colorButtonBlue;
     margin-left: 2px;
     cursor: pointer;
+  }
+}
+
+@include breakpoint-down("410px") {
+  .footer {
+    padding: 1rem 2rem;
+    flex-direction: column;
+
+    span {
+      margin-top: 1rem;
+    }
   }
 }

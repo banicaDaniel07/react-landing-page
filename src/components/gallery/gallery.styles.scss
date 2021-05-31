@@ -1,4 +1,5 @@
 @import "../../assets/scss/variabiles";
+@import "../../assets/scss/mixins";
 
 .gallery {
   width: 100%;
@@ -17,5 +18,39 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.625rem;
+  }
+}
+
+@include breakpoint-down(pc) {
+  .gallery {
+    &__container {
+      width: fit-content;
+      margin: 0 auto;
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+      align-items: center;
+    }
+  }
+}
+
+@include breakpoint-down(tablet) {
+  .gallery {
+    &__container {
+      width: fit-content;
+      margin: 0 auto;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+@include breakpoint-down("810px") {
+  .gallery {
+    &__info {
+      width: 80%;
+      margin: 0 auto 3rem;
+    }
+    &__container {
+      grid-template-columns: 1fr;
+    }
   }
 }

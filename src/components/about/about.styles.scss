@@ -1,7 +1,9 @@
 @import "../../assets/scss/variabiles";
+@import "../../assets/scss/mixins";
 
 .about {
-  width: 100%;
+  width: 100vw;
+  height: fit-content;
   padding: 6.25rem 0;
 
   &__container {
@@ -42,5 +44,113 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: start;
+  }
+}
+
+@include breakpoint-down(pc) {
+  .about {
+    &__container {
+      width: 90%;
+      grid-template-columns: 3fr 2fr;
+      justify-items: center;
+      margin: 0 auto;
+    }
+
+    &__image {
+      width: 30rem;
+    }
+  }
+}
+
+@include breakpoint-down(tablet) {
+  .about {
+    &__container {
+      width: 90%;
+      height: fit-content;
+      grid-template-columns: 3fr 2fr;
+    }
+
+    &__image {
+      width: 25rem;
+    }
+
+    &__info {
+      width: 90%;
+    }
+
+    &__subtitle {
+      padding-right: 1rem;
+    }
+
+    &__context {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+@include breakpoint-down(phone) {
+  .about {
+    height: fit-content;
+    &__container {
+      width: 90%;
+      display: grid;
+    }
+
+    &__image {
+      width: 25rem;
+    }
+
+    &__subtitle {
+      padding-right: 1rem;
+    }
+
+    &__context {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@include breakpoint-down("810px") {
+  .about {
+    height: fit-content;
+    &__container {
+      width: 90%;
+      display: grid;
+      grid-template-columns: 1fr;
+    }
+
+    &__image {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    &__aboutUs {
+      text-align: center;
+    }
+
+    &__info {
+      margin-top: 3rem;
+    }
+
+    &__subtitle {
+      text-align: center;
+    }
+    &__context {
+      grid-template-columns: 1fr 1fr;
+      justify-items: center;
+    }
+  }
+}
+@include breakpoint-down("470px") {
+  .about {
+    &__image {
+      width: 18.75rem;
+      height: 18.75rem;
+    }
+
+    &__context {
+      grid-template-columns: 1fr;
+      margin-left: 15vw;
+
+      justify-items: start;
+    }
   }
 }

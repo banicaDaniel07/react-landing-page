@@ -1,6 +1,8 @@
 @import "../../assets/scss/variabiles";
+@import "../../assets/scss/mixins";
 
 .title {
+  width: 100%;
   position: relative;
   font-size: 2.25rem;
   color: $colorBlack3;
@@ -45,4 +47,14 @@
 
 .margin-bottom {
   margin-bottom: 5.9375rem;
+}
+
+@include breakpoint-down(pc) {
+  .text-start {
+    text-align: center;
+
+    &::after {
+      left: 50%;
+    }
+  }
 }

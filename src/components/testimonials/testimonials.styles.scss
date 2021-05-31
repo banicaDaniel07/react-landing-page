@@ -1,15 +1,40 @@
 @import "../../assets/scss/variabiles";
+@import "../../assets/scss/mixins";
 
 .testimonials {
-  width: 100%;
-  padding: 6.25rem;
+  width: 100vw;
+  padding: 6.25rem 0;
   background-color: $colorGrey;
 
   &__container {
-    width: 73.125rem;
+    max-width: 73.125rem;
     margin: 4.375rem auto 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
+  }
+}
+
+@include breakpoint-down(pc) {
+  .testimonials {
+    &__container {
+      width: 90%;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+@include breakpoint-down(tablet) {
+  .testimonials {
+    &__container {
+      width: 98%;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+@include breakpoint-down("740px") {
+  .testimonials {
+    &__container {
+      grid-template-columns: 1fr;
+    }
   }
 }

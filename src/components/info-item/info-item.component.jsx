@@ -5,7 +5,7 @@ import './info-item.styles.scss';
 const InfoItem = ({children}) => {
     return (
         <div className='info'>
-            <i class="fas fa-check"></i>
+            <i className="fas fa-check"></i>
             {children}
         </div>
     )

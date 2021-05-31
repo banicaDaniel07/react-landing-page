@@ -22,15 +22,15 @@ const Contact = () => {
             <div className="contact__right">
                 <h3 className="contact__right__info">Contact Info</h3>
                 <div className="contact__right__address">
-                <i class="fas fa-map-marker-alt"></i><span>Address</span>
+                <i className="fas fa-map-marker-alt"></i><span>Address</span>
                 <p className="contact__right__address__info">4321 California St, San Francisco, CA 12345</p>
                 </div>
                 <div className="contact__right__phone">
-                <i class="fas fa-phone"></i><span>Phone</span>
+                <i className="fas fa-phone"></i><span>Phone</span>
                 <p className="contact__right__phone__info">+1 123 456 1234</p>
                 </div>
                 <div className="contact__right__email">
-                <i class="far fa-envelope"></i><span>Email</span>
+                <i className="far fa-envelope"></i><span>Email</span>
                 <p className="contact__right__email__info">info@company.com</p>
                 </div>
             </div>
@@ -38,9 +38,9 @@ const Contact = () => {
 
             <div className="social">
                 <div className="social__container">
-                    <i class="fab fa-facebook-f"></i>
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-instagram"></i>
+                    <i className="fab fa-facebook-f"></i>
+                    <i className="fab fa-twitter"></i>
+                    <i className="fab fa-instagram"></i>
                 </div>
             </div>
         </div>

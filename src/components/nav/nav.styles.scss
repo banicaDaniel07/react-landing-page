@@ -1,4 +1,5 @@
 @import "../../assets/scss/variabiles";
+@import "../../assets/scss/mixins";
 
 .nav {
   position: fixed;
@@ -50,5 +51,65 @@
 
   &__link:not(:last-of-type) {
     margin-right: 2.7rem;
+  }
+
+  &__container {
+    display: none;
+  }
+}
+
+@include breakpoint-down(pc) {
+  .nav {
+    width: 100vw;
+    background-color: red;
+
+    &__content {
+      width: 100vw;
+      padding: 0 2.5rem;
+    }
+    &__link {
+      font-size: 0.875rem;
+    }
+
+    &__link:not(:last-of-type) {
+      margin-right: 1.25rem;
+    }
+  }
+}
+
+@include breakpoint-down(tablet) {
+  .nav {
+    background-color: royalblue;
+    &__list {
+      display: none;
+    }
+    &__container {
+      display: block;
+      width: 3.125rem;
+      height: 3.125rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__menu {
+      font-size: 1.875rem;
+    }
+  }
+}
+
+@include breakpoint-down(phone) {
+  .nav {
+    background-color: salmon;
+    &__logo {
+      font-weight: 0.875rem;
+    }
+  }
+}
+
+@include breakpoint-down("410px") {
+  .nav {
+    &__logo {
+      font-size: 1rem;
+    }
   }
 }

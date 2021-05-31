@@ -1,10 +1,13 @@
-@import "../../assets/scss/variabiles";
+@import "../../assets/scss/variabiles", "../../assets/scss/mixins";
 
 .hero {
   height: calc(100vh - 5rem);
   width: 100vw;
   background: linear-gradient(to bottom, $black02 0%, $black01 100%),
     url("../../assets/img/intro-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -30,5 +33,51 @@
     font-weight: $font-light;
     line-height: 1.875rem;
     margin-bottom: 3.75rem;
+  }
+}
+
+@include breakpoint-down(tablet) {
+  .hero {
+    &__container {
+      width: 100%;
+    }
+    &__title {
+      font-size: 4rem;
+      font-weight: $font-bold-slim;
+      line-height: 4.125rem;
+    }
+
+    &__subtitle {
+      max-width: 80%;
+      text-align: center;
+      margin: 0 auto 3.75rem;
+    }
+  }
+}
+@include breakpoint-down("470px") {
+  .hero {
+    height: calc(100vh - 80px);
+    &__container {
+      width: 100%;
+    }
+    &__title {
+      width: 70%;
+      font-size: 3rem;
+      line-height: 3.1rem;
+      margin: 0 auto 2rem;
+    }
+
+    &__subtitle {
+      font-size: 1rem;
+      line-height: 1.2rem;
+    } 
+  }
+}
+@include breakpoint-down("410px") {
+  .hero {
+    &__title {
+      font-size: 2.5rem;
+      line-height: 2.7rem;
+    }
   }
 }

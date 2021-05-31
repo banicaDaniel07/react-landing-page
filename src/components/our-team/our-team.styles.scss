@@ -1,49 +1,45 @@
 @import "../../assets/scss/variabiles";
+@import "../../assets/scss/mixins";
 
-.team-item {
-  width: 15rem;
-  height: 19.375rem;
-
-  &__photo {
-    width: 100%;
-    height: 15rem;
-    margin-bottom: 1.25rem;
-  }
-
-  &__name {
+.team {
+  width: 100vw;
+  padding: 6.25rem 0;
+  &__info {
     font-size: 1.125rem;
-    color: $colorBlack3;
-    margin: 0.3125rem 0;
-  }
-
-  &__position {
-    font-size: 0.9375rem;
     font-family: $familly-sans;
     color: $colorBlack7;
+    margin-bottom: 4.375rem;
+  }
+
+  &__container {
+    width: 73.125rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
   }
 }
 
-.bg-t-01 {
-  background-image: url("../../assets/img/team/01.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+@include breakpoint-down(pc) {
+  .team {
+    &__container {
+      width: fit-content;
+      gap: 2rem;
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 }
-.bg-t-02 {
-  background-image: url("../../assets/img/team/02.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.bg-t-03 {
-  background-image: url("../../assets/img/team/03.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.bg-t-04 {
-  background-image: url("../../assets/img/team/04.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+@include breakpoint-down("740px") {
+  .team {
+    &__info {
+      width: 80%;
+      text-align: center;
+      margin: 0 auto 4.375rem;
+    }
+
+    &__container {
+      grid-template-columns: 1fr;
+    }
+  }
 }

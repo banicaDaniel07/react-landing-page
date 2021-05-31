@@ -1,11 +1,10 @@
 import React from 'react' 
-import { Link, Switch } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 import './nav.styles.scss';
 
 const Navigation = () => {
     return (
-        <Switch>
             <div className='nav container'>
                 <div className='nav__content'> 
                     <div className="nav__logo">REACT LANDING PAGE
@@ -19,9 +18,11 @@ const Navigation = () => {
                         <Link className='nav__link' to='/'>TEAM</Link>
                         <Link className='nav__link' to='/'>CONTACT</Link>
                     </div>
+                    <div className="nav__container">
+                    <i className="fas fa-bars nav__menu"></i>
+                    </div>
                 </div>
             </div>
-        </Switch>
     )
 }
 
